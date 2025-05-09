@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Wallpoet&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(139, 22, 22, 0.95);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 9vh;
+    height: 7vh;
+    mix-blend-mode: darken;
+    margin: 0 5px;
+}
+
+.logo h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 5px;
+
+}
+
+.nav-bar ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-bar ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px 18px;
+    transition: 0.5s ease;
+}
+
+.nav-bar ul li a:hover {
+    border-radius: 20px;
+    background-color: rgb(253, 107, 3);
+    color: rgb(0, 0, 0);
+}
+
+#Home {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(139, 22, 22, 0.95);
+    align-items: center;
+    height: 90vh;
+}
+
+.containar {
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+}
+
+.left-containar {
+    width: 45vw;
+    margin: 5px;
+    padding: 25px 10px;
+}
+
+.left-containar h2 {
+    color: rgb(253, 143, 0);
+    font-size: 2.5rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+}
+
+.left-containar h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin: 5px 0px;
+    padding: 5px 0;
+}
+
+.left-containar p {
+    color: rgb(223, 214, 214);
+    font-size: 1.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.left-containar .button {
+    margin: 25px 0;
+}
+
+.left-containar .button a {
+    color: rgb(247, 247, 247);
+    font-size: 17px;
+    border: 2px solid rgb(247, 247, 247);
+    padding: 10px;
+    border-radius: 5rem;
+    text-decoration: none;
+    margin: 0px 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.5s ease;
+}
+
+.left-containar .button a:hover {
+    background-color: rgb(253, 143, 0);
+    border: 2px solid rgb(253, 143, 0);
+    color: rgb(0, 0, 0);
+}
+
+.left-containar .button .first-button {
+    background-color: rgb(253, 143, 0);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(253, 143, 0);
+}
+
+.left-containar .button .first-button:hover {
+    color: rgb(247, 247, 247);
+    border: 2px solid rgb(247, 247, 247);
+    background-color: rgba(139, 22, 22, 0.95);
+}
+
+.right-containar {
+    margin: 5px;
+    padding: 7px;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.main-container .about-container {
+    display: flex;
+}
+
+.main-container .about-container .about-left {
+    margin: 20px 5rem;
+}
+
+.main-container .about-container .about-right {
+    margin: 20px 20px 20px 6.5rem;
+}
+
+.main-container .about-container .about-left img {
+    margin: 5px;
+    border-radius: 100%;
+    width: 30vw;
+    height: 60vh;
+    object-fit: fill;
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0, 0.19); */
+}
+
+.main-container .about-container .about-right h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 10px 5px;
+    padding: 30px 5px;
+}
+
+.main-container .about-container .about-right h1::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    display: block;
+    margin: 5px auto 0;
+    background-color: rgb(252, 168, 13);
+    border-radius: 20px;
+}
+
+.main-container .about-container .about-right p {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 21px;
+    color: rgb(61, 61, 61);
+}
+
+.main-container .about-container .about-right .icons {
+    text-align: center;
+    margin: 5px;
+}
+
+.main-container .about-container .about-right .icons i {
+    margin: 5px;
+    padding: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.main-container .about-container .about-right .icons a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.main-container .about-container .about-right .icons i:hover {
+    color: rgb(255, 165, 0);
+}
+
+.main-menu {
+    padding: 3rem 10px;
+    background: rgb(58, 58, 58);
+    color: rgb(255, 255, 255)
+}
+
+.main-menu h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-menu h1::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    display: block;
+    margin: 5px auto 0;
+    background-color: rgb(252, 168, 13);
+    border-radius: 20px;
+}
+
+.main-menu .cards {
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-menu .cards .card {
+    margin: 5px;
+    width: 25vw;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.main-menu .cards .card img {
+    width: 23vw;
+    height: 40vh;
+    object-fit: fill;
+    margin: 10px;
+}
+
+.main-menu .cards .card h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.main-menu .cards .card p {
+    text-align: center;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: rgb(236, 226, 226);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-Testimonials {
+    height: 80vh;
+    margin: 30px 10px;
+    padding: 3rem 0;
+}
+
+.head-text h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.head-text::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    display: block;
+    margin: 5px auto 0;
+    background-color: rgb(252, 168, 13);
+    border-radius: 20px;
+}
+
+.testimonials-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 35px 5px;
+    align-items: center;
+}
+
+.testimonials-cards .testimonials-card {
+    margin: 5px;
+    width: 25vw;
+    height: 50vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.testimonials-cards .testimonials-card img {
+    border: 2px solid black;
+    width: 13vw;
+    height: 27vh;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.testimonials-cards .testimonials-card h2 {
+    font-size: 1.5rem;
+    margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.testimonials-cards .testimonials-card p {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px 20px;
+}
+
+.main-Gallery {
+    margin: 5px;
+    padding: 3rem 0;
+}
+
+.main-Gallery .text h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.main-Gallery .text h1::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    display: block;
+    margin: 5px auto 0;
+    background-color: rgb(252, 168, 13);
+    border-radius: 20px;
+}
+
+.main-image {
+    margin: 30px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-image .co-image {
+    border: 2px solid rgb(0, 0, 0);
+    width: 25vw;
+    height: 35vh;
+    border-radius: 15px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.main-image .co-image img {
+    width: 25vw;
+    height: 35vh;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.main-Contact {
+    padding: 3rem 10px;
+    background-color: rgba(255, 236, 236, 0.336);
+}
+
+.main-Contact .text-h {
+    margin: 0 0 5rem 0;
+}
+
+.main-Contact .text-h h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-Contact .text-h h1::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    display: block;
+    margin: 5px auto 0;
+    background-color: rgb(252, 168, 13);
+    border-radius: 20px;
+}
+
+.co-Contact {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.co-Contact .left-Contact {
+    margin: 10px 5px;
+}
+
+.co-Contact .left-Contact .icon {
+    display: flex;
+    margin: 10px;
+}
+
+.co-Contact .left-Contact .icon i {
+    font-size: 1.1rem;
+    margin: 5px 5px;
+    padding: 2px 20px;
+}
+
+.co-Contact .left-Contact .icon p {
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin: 5px 5px;
+    padding: 2px 10px;
+}
+
+.co-Contact .right-Conact {
+    margin: 10px 5px;
+    width: 50vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+.co-Contact .right-Conact .form {
+    margin: 5px;
+}
+
+.co-Contact .right-Conact .form input {
+    border: 1px solid rgb(180, 180, 180);
+    display: block;
+    margin: 20px 10px;
+    width: 47vw;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.co-Contact .right-Conact .form textarea {
+    border: 1px solid rgb(180, 180, 180);
+    display: block;
+    width: 47vw;
+    height: 16vh;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin: 0px 10px 30px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.co-Contact .right-Conact .form .sub-btn {
+    margin: 10px;
+    padding: 10px;
+}
+
+.co-Contact .right-Conact .form a {
+    border: 2px solid rgba(139, 22, 22, 0.95);
+    text-decoration: none;
+    background-color: rgba(139, 22, 22, 0.95);
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    border-radius: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    transition: 0.8s ease;
+}
+
+.co-Contact .right-Conact .form a:hover {
+    border: 2px solid rgb(252, 168, 13);
+    background-color: rgb(252, 168, 13);
+    color: rgb(0, 0, 0);
+}
+
+.main-location{
+    padding: 3rem 10px;
+}
+
+.main-location h1{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-location h1::after{
+    content: "";
+    width: 170px;
+    height: 4px;
+    display: block;
+    margin: 5px auto 0;
+    background-color: rgb(252, 168, 13);
+    border-radius: 20px;
+}
+
+.co-location{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0 0px 0;
+    padding: 30px 0 0px 0;
+}
+
+.co-location iframe{
+    width: 100vw;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    align-items: center;
+}
+
+.main-footer .copy-right{
+    padding: 5px;
+}
+
+.main-footer .copy-right h1{
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.main-footer .web-link{
+    padding: 5px;
+}
+
+.main-footer .web-link a{
+    padding: 0 10px;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}
+
+.main-footer .web-link a:hover{
+    color: rgb(255, 165, 0);
+}
+
+.main-footer .policy{
+    padding: 5px;
+}
+
+.main-footer .policy a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
